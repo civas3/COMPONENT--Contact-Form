@@ -1,0 +1,22 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine; }
+
+section {
+  width: 300px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 3rem 1rem; }
+
+input, select {
+  margin-bottom: 1rem; }
+
+label {
+  font-weight: bold; }
