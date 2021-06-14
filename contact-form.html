@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="/js/contact-form-validation.js" ></script>
+    <script src="js/contact-form-validation.js" ></script>
 </head>
 <body>
 
 <section>
      
-    <form  name="contactForm"  action="php/mail.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <form  id="contactForm"  action="php/mail.php" method="post">
         <!-- name -->
         <label for="name">Full name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name.."  />
+        <input type="text" id="fullname" name="fullname" placeholder="Your full name.." />
         <div class="validation-message" id="nameValidation"></div>
         <!-- email -->
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your e-mail.."  />
+        <input type="email" id="email" name="email" placeholder="Your e-mail.." />
         <div class="validation-message" id="emailValidation"></div>
         <!-- country -->
         <label for="country">Country</label>
@@ -297,7 +297,7 @@
         <textarea id="message" name="message" placeholder="Write your message here.."
             style="height:100px"></textarea>
         <!--  send button-->
-        <input type="submit" id="send-button" name="submit" value="Send" />
+        <input type="submit" id="send-button" value="Send" />
     </form>
 </section>
 
